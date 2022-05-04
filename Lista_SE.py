@@ -53,7 +53,7 @@ while(opcion!=10):
         extraerI(c)
     elif(opcion==6):
         n= int(input("Ingresa la posición que quieras eliminar: "))
-        datoExtraido= extraerN(c, datoIngreso, n)
+        datoExtraido= extraerN(c, n)
         print("Dato extraido por la pos "+str(n)+": "+str(datoExtraido))
     elif(opcion==7):
         c = recorrerLista(c)

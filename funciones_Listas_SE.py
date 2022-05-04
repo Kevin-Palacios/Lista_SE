@@ -133,14 +133,14 @@ def extraerD(l):
 
 
 
-def extraerN(l, datoIngreso, n):
+def extraerN(l, n):
     listaAux = crearLista()
     
     nodousuario=Nodo()
     nodoAux=Nodo()
     if(estaVacia(l)):
-        agregarDerecha(l, datoIngreso)
-        return l
+        print("la lista está vacía")
+        return None
     else:
         i=0
         for i in range(n):
@@ -196,6 +196,5 @@ def borrarLista(l):
             del nodoAuxiliar
             nodoAuxiliar=nodoAuxiliarRespaldo
         l.cabecera=None
-        l.final=None
         l.cursor=None
         del l
